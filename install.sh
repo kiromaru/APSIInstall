@@ -43,7 +43,9 @@ make $makeparallel
 make install
 
 # SEAL
-cd ~/projects/SEAL/native/src
+cd ~/projects
+git clone https://github.com/microsoft/SEAL.git
+cd SEAL/native/src
 mkdir -p .build
 cd .build
 cmake .. -DCMAKE_INSTALL_PREFIX=~/mylibs
@@ -71,6 +73,12 @@ cd .build
 cmake .. -DCMAKE_INSTALL_PREFIX=~/mylibs
 make $makeparallel
 make install
+
+cd ~/projects/APSI/CommonCodeCLI
+mkdir -p .build
+cd .build
+cmake .. -DCMAKE_PREFIX_PATH=~/mylibs
+make $makeparallel
 
 cd ~/projects/APSI/SenderCLI
 mkdir -p .build
