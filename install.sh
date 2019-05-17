@@ -3,15 +3,8 @@
 # Parallel make
 makeparallel=-j
 
-sudo apt install cmake
-sudo apt install g++
-sudo apt install unzip
-sudo apt install libtclap-dev
-sudo apt install libboost-dev
-sudo apt install libmsgsl-dev
-sudo apt install libflint-dev
-sudo apt install liblog4cplus-dev
-sudo apt install libzmqpp-dev
+# Install all dependencies
+sudo apt install cmake g++ unzip libtclap-dev libboost-dev libmsgsl-dev libflint-dev liblog4cplus-dev libzmqpp-dev
 
 mkdir -p ~/projects
 cd ~/projects
