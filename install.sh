@@ -38,8 +38,8 @@ make install
 # SEAL
 cd ~/projects
 git clone https://github.com/microsoft/SEAL.git
-git checkout 3.2.0
 cd SEAL/native/src
+git checkout 3.2.0
 mkdir -p .build
 cd .build
 cmake .. -DCMAKE_INSTALL_PREFIX=~/mylibs
