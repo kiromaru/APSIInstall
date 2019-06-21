@@ -4,7 +4,7 @@
 makeparallel=-j
 
 # Install all dependencies
-sudo apt install cmake g++ unzip libtclap-dev libboost-dev libmsgsl-dev libflint-dev liblog4cplus-dev libzmqpp-dev curl
+sudo apt install cmake g++ unzip libtclap-dev libboost-dev libmsgsl-dev libflint-dev liblog4cplus-dev libzmqpp-dev curl --assume-yes
 
 mkdir -p ~/projects
 cd ~/projects
@@ -38,6 +38,7 @@ make install
 # SEAL
 cd ~/projects
 git clone https://github.com/microsoft/SEAL.git
+git checkout 3.2.0
 cd SEAL/native/src
 mkdir -p .build
 cd .build
